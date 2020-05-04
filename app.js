@@ -137,8 +137,11 @@ const server = http.createServer((req, res) => {
 				failed = 0;
 			}
 
-			if ( failed )
-				not_found(res);
+
+			res.writeHead(302, {
+				'Location': '/'
+			});
+			res.end();
 
 		} else {
 			timestamp_log( ip + ": " + req.url);
