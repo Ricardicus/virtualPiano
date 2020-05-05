@@ -2,6 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
+<meta property="og:url"                content="http://83.251.61.218:8080" />
+<meta property="og:title"              content="Rickards Coola Hjälppiano" />
+<meta property="og:description"        content="Behöver du stämma ditt instrument? Inga problem." />
+<meta property="og:image"              content="http://83.251.61.218:8080/demo/piano.png" />
 </head>
 <style>
 	html  {
@@ -235,6 +239,7 @@ function playNote(e) {
   audio.pause();
   audio.currentTime = 0;
   audio.src = audio.src;
+  audio.load();
   audio.play();
 }
 
@@ -254,6 +259,7 @@ function playNoteClick(e) {
   audio.pause();
   audio.currentTime = 0;
   audio.src = audio.src;
+  audio.load();
   audio.play();
 }
 
