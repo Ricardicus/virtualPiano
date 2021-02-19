@@ -18,5 +18,5 @@ Now navigate to localhost:8090 in your browser!
 
 # Visit website
 
-It is running on my Raspberry Pi, reachable here:
+The service is running on my Raspberry Pi at the moment, reachable here:
 http://piano.ricardicus.se
